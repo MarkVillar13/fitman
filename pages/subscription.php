@@ -667,22 +667,43 @@ mysqli_stmt_close($check_stmt);
                 <?php
     // Update the pending query to include service price
       // Update the pending query to include service price and calculate total amount correctly
-      $pendingQuery = "SELECT s.sale_date, s.quantity, s.total_price, s.user_id,
-      u.email, 
-      ser.name as service_name, ser.price as service_price,
-      sub.subscription_id, sub.start_date, sub.end_date,
-      sub.total_duration, sub.additional_duration,
-      (ser.price * s.quantity) as calculated_total
-  FROM subscriptions sub
-  JOIN users u ON sub.user_id = u.user_id
-  JOIN sales s ON sub.user_id = s.user_id
-  JOIN services ser ON s.item_id = ser.service_id
-  WHERE sub.isAdditional = TRUE
-  AND s.status = 'pending'
-  AND s.item_type = 'Service'
-  GROUP BY sub.subscription_id
-  ORDER BY s.sale_date DESC";
-    $pendingResult = mysqli_query($db, $pendingQuery);
+      $pendingQuery = "SELECT 
+    s.sale_date, 
+    s.quantity, 
+    s.total_price, 
+    s.user_id, 
+    u.email, 
+    ser.name as service_name, 
+    ser.price as service_price, 
+    sub.subscription_id, 
+    sub.start_date, 
+    sub.end_date, 
+    sub.total_duration, 
+    sub.additional_duration, 
+    (ser.price * s.quantity) as calculated_total 
+FROM subscriptions sub 
+JOIN users u ON sub.user_id = u.user_id 
+JOIN sales s ON sub.user_id = s.user_id 
+JOIN services ser ON s.item_id = ser.service_id 
+WHERE sub.isAdditional = TRUE 
+    AND s.status = 'pending' 
+    AND s.item_type = 'Service' 
+GROUP BY 
+    sub.subscription_id,
+    s.sale_date,
+    s.quantity,
+    s.total_price,
+    s.user_id,
+    u.email,
+    ser.name,
+    ser.price,
+    sub.start_date,
+    sub.end_date,
+    sub.total_duration,
+    sub.additional_duration
+ORDER BY s.sale_date DESC";
+
+$pendingResult = mysqli_query($db, $pendingQuery);
         
     if(mysqli_num_rows($pendingResult) < 1) {
         echo '<tr><td colspan="9" class="text-center text-muted py-3">No pending subscriptions</td></tr>';

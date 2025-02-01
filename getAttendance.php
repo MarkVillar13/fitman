@@ -3,7 +3,11 @@ require_once('database.php');
 
 if (isset($_GET['user_id'])) {
     $user_id = $_GET['user_id'];
-    $query = "SELECT DATE(ScanTime) AS attendance_date, ScanType FROM attendance WHERE EmployeeID = ? GROUP BY attendance_date";
+    
+    $query = "SELECT DATE(ScanTime) AS attendance_date, ScanType 
+              FROM attendance 
+              WHERE EmployeeID = ? 
+              GROUP BY DATE(ScanTime), ScanType";  // Added ScanType to GROUP BY
     
     $stmt = $db->prepare($query);
     $stmt->bind_param("i", $user_id);
@@ -17,6 +21,7 @@ if (isset($_GET['user_id'])) {
             'status' => ($row['ScanType'] == 'IN') ? 'present' : 'absent'
         ];
     }
+
     
     // Send the response as JSON
     echo json_encode($attendanceData);

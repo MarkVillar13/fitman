@@ -1,0 +1,53 @@
+[22-Jan-2025 21:38:50 Asia/Manila] Processing order for customer: richmondlvda@gmail.com
+[22-Jan-2025 21:38:50 Asia/Manila] Attempting to send email to: richmondlvda@gmail.com
+[22-Jan-2025 21:38:53 Asia/Manila] Email sent successfully
+[22-Jan-2025 21:39:09 Asia/Manila] Processing order for customer: angeljayramos1221@gmail.com
+[22-Jan-2025 21:39:09 Asia/Manila] Attempting to send email to: angeljayramos1221@gmail.com
+[22-Jan-2025 21:39:12 Asia/Manila] Email sent successfully
+[25-Jan-2025 20:46:07 Asia/Manila] Processing order for customer: richmondlvda@gmail.com
+[25-Jan-2025 20:46:07 Asia/Manila] Attempting to send email to: richmondlvda@gmail.com
+[25-Jan-2025 20:46:11 Asia/Manila] Email sent successfully
+[25-Jan-2025 20:47:34 Asia/Manila] Processing order for customer: richmondlavadia0116@gmail.com
+[25-Jan-2025 20:47:34 Asia/Manila] Attempting to send email to: richmondlavadia0116@gmail.com
+[25-Jan-2025 20:47:39 Asia/Manila] Email sent successfully
+[25-Jan-2025 20:53:04 Asia/Manila] Processing order for customer: richmondlvda@gmail.com
+[25-Jan-2025 20:53:04 Asia/Manila] Attempting to send email to: richmondlvda@gmail.com
+[25-Jan-2025 20:53:07 Asia/Manila] Email sent successfully
+[27-Jan-2025 15:07:49 Asia/Manila] Processing order for customer: richmondlvda@gmail.com
+[27-Jan-2025 15:07:49 Asia/Manila] Attempting to send email to: richmondlvda@gmail.com
+[27-Jan-2025 15:07:52 Asia/Manila] Email sent successfully
+[27-Jan-2025 15:45:05 Asia/Manila] PHP Warning:  Undefined array key "sale_id" in C:\XAMPNEW\htdocs\fitman\pages\subscription.php on line 354
+[27-Jan-2025 15:45:05 Asia/Manila] PHP Warning:  Undefined array key "sale_id" in C:\XAMPNEW\htdocs\fitman\pages\subscription.php on line 354
+[27-Jan-2025 15:49:08 Asia/Manila] Processing order for customer: richmondlvda@gmail.com
+[27-Jan-2025 15:49:08 Asia/Manila] Attempting to send email to: richmondlvda@gmail.com
+[27-Jan-2025 15:49:12 Asia/Manila] Email sent successfully
+[27-Jan-2025 15:49:26 Asia/Manila] Processing order for customer: richmondlvda@gmail.com
+[27-Jan-2025 15:49:26 Asia/Manila] Attempting to send email to: richmondlvda@gmail.com
+[27-Jan-2025 15:49:30 Asia/Manila] Email sent successfully
+[27-Jan-2025 15:55:29 Asia/Manila] Processing order for customer: richmondlvda@gmail.com
+[27-Jan-2025 15:55:29 Asia/Manila] Attempting to send email to: richmondlvda@gmail.com
+[27-Jan-2025 15:55:33 Asia/Manila] Email sent successfully
+[27-Jan-2025 16:01:54 Asia/Manila] Processing order for customer: richmondlvda@gmail.com
+[27-Jan-2025 16:01:54 Asia/Manila] Attempting to send email to: richmondlvda@gmail.com
+[27-Jan-2025 16:01:58 Asia/Manila] Email sent successfully
+[27-Jan-2025 16:04:34 Asia/Manila] Error in order processing: Failed to insert subscription record: Unknown column 'user_id' in 'field list'
+[27-Jan-2025 16:05:54 Asia/Manila] Attempting to send email to: richmondlvda@gmail.com
+[27-Jan-2025 16:05:58 Asia/Manila] Email sent successfully
+[27-Jan-2025 16:06:09 Asia/Manila] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\XAMPNEW\htdocs\fitman\pages\subscription.php:34
+Stack trace:
+#0 C:\XAMPNEW\htdocs\fitman\pages\subscription.php(34): mysqli_fetch_assoc(false)
+#1 C:\XAMPNEW\htdocs\fitman\subscription.php(32): include('C:\\XAMPNEW\\htdo...')
+#2 {main}
+  thrown in C:\XAMPNEW\htdocs\fitman\pages\subscription.php on line 34
+[27-Jan-2025 16:09:19 Asia/Manila] Attempting to send email to: richmondlvda@gmail.com
+[27-Jan-2025 16:09:22 Asia/Manila] Email sent successfully
+[27-Jan-2025 16:12:27 Asia/Manila] Attempting to send email to: richmondlvda@gmail.com
+[27-Jan-2025 16:12:30 Asia/Manila] Email sent successfully
+[27-Jan-2025 16:14:14 Asia/Manila] PHP Warning:  Undefined array key "total_amount" in C:\XAMPNEW\htdocs\fitman\pages\subscription.php on line 518
+[27-Jan-2025 16:14:14 Asia/Manila] PHP Warning:  Undefined array key "total_amount" in C:\XAMPNEW\htdocs\fitman\pages\subscription.php on line 518
+[27-Jan-2025 16:14:59 Asia/Manila] PHP Warning:  Undefined variable $s_price in C:\XAMPNEW\htdocs\fitman\pages\subscription.php on line 499
+[27-Jan-2025 16:14:59 Asia/Manila] PHP Warning:  Undefined variable $s_quantity in C:\XAMPNEW\htdocs\fitman\pages\subscription.php on line 499
+[27-Jan-2025 16:15:00 Asia/Manila] PHP Warning:  Undefined variable $s_price in C:\XAMPNEW\htdocs\fitman\pages\subscription.php on line 499
+[27-Jan-2025 16:15:00 Asia/Manila] PHP Warning:  Undefined variable $s_quantity in C:\XAMPNEW\htdocs\fitman\pages\subscription.php on line 499
+[27-Jan-2025 16:25:02 Asia/Manila] Attempting to send email to: richmondlvda@gmail.com
+[27-Jan-2025 16:25:05 Asia/Manila] Email sent successfully
